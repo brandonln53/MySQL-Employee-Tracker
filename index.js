@@ -397,7 +397,7 @@ async function removeDepartment() {
 }
 
 async function addEmployee() {
-  const roles = await db.findAllRoles();
+  const roles = await db.FindAllRoles();
   const employees = await db.findAllEmployees();
 
   const employee = await prompt([
